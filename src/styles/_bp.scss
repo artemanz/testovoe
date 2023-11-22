@@ -1,0 +1,22 @@
+$tablet: "min-width: 425px";
+$tablet-l: "min-width: 768px";
+$laptop: "min-width: 1024px";
+$desktop: "min-width: 1440px";
+
+html {
+  @media ($tablet) {
+    font-size: 1.25rem;
+  }
+
+  @media ($tablet-l) {
+    font-size: 1.5rem;
+  }
+
+  @media ($laptop) {
+    font-size: 1rem;
+  }
+
+  @media ($desktop) {
+    font-size: 1.4rem;
+  }
+}

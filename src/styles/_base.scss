@@ -1,0 +1,16 @@
+@use "bp" as *;
+
+main {
+  overflow-x: hidden;
+}
+
+.Container {
+  position: relative;
+  padding-inline: 0.8rem;
+  margin-inline: auto;
+  max-width: 1400px;
+
+  @media ($laptop) {
+    padding-inline: 1.5rem;
+  }
+}

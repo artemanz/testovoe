@@ -1,0 +1,119 @@
+@use "bp" as *;
+
+.CardPrice {
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  .PriceNew {
+    display: flex;
+    font-weight: bold;
+    color: #383838;
+
+    .Big {
+      font-size: 2.1rem;
+    }
+    .Small {
+      font-size: 0.85rem;
+    }
+  }
+
+  .PriceOld {
+    display: flex;
+    position: relative;
+    .Big {
+      font-size: 1.4rem;
+    }
+    .Small {
+      font-size: 0.6rem;
+    }
+    hr {
+      width: 100%;
+      top: 50%;
+      height: 1px;
+      background: black;
+      translate: 0 -50%;
+      position: absolute;
+      border: none;
+    }
+  }
+}
+
+.CardSticker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1;
+  background: #e30613;
+  color: #fff;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  height: 2.6rem;
+
+  p:first-child {
+    font-size: 1.4rem;
+  }
+
+  p:last-child {
+    font-size: 0.75rem;
+  }
+}
+
+.CardDiscount {
+  background: url("./assets/Dishes/disount-shape.svg") no-repeat top/contain;
+  padding: 0.5rem 0.25rem;
+  line-height: 1;
+
+  span {
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+}
+
+.ProductCard {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  .PriceRow {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .Title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+
+    span {
+      font-weight: 400;
+      font-size: 0.9rem;
+    }
+  }
+
+  .Info {
+    padding-left: 1.5rem;
+    list-style-type: disc;
+  }
+}
+
+.SectionTitle {
+  font-size: 1.4rem;
+
+  @media ($laptop) {
+    font-size: 2.3rem;
+  }
+}
+
+.Button {
+  display: block;
+  border: 1.5px solid white;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 1.5rem;
+  font-weight: bold;
+  padding: 1rem 2.5rem;
+  text-align: center;
+}
